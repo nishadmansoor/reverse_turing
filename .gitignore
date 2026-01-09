@@ -1,0 +1,4 @@
+data/raw/
+data/processed/n__pycache__/
+.env
+.ipynb_checkpoints/
