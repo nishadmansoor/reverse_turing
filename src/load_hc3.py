@@ -13,7 +13,7 @@ def main():
     ap.add_argument("--max_rows", type=int, default=5000)
     args = ap.parse_args()
 
-    ds = load_dataset("Hello-SimpleAI/HC3")
+    ds = load_dataset("Hello-SimpleAI/HC3", trust_remote_code=True)
 
     # pick first available split
     split = ds[list(ds.keys())[0]]
